@@ -57,12 +57,9 @@ You can start editing the popup by modifying `popup.tsx`. It should auto-update 
 
 TailwindCSS is already configured in this template. To style your components, use the Tailwind utility classes directly in your JSX:
 
-`tsx
-
-<div className="p-4 bg-blue-500 text-white">
-Hello, TailwindCSS!
-</div>
-`
+```tsx
+<div className="p-4 bg-blue-500 text-white">Hello, TailwindCSS!</div>
+```
 
 You can customize Tailwind settings in the `tailwind.config.js` file.
 
@@ -70,13 +67,13 @@ You can customize Tailwind settings in the `tailwind.config.js` file.
 
 shadcnui components are included for building UI quickly. Example:
 
-`tsx
+```tsx
 import { Button } from "shadcn/ui/button"
 
 function Example() {
-return <Button>Click me!</Button>
+  return <Button>Click me!</Button>
 }
-`
+```
 
 Refer to the [shadcnui documentation](https://shadcn.dev/) for more components and usage examples.
 
@@ -84,32 +81,32 @@ Refer to the [shadcnui documentation](https://shadcn.dev/) for more components a
 
 If you want to use Supabase in your extension, set up your Supabase project and add your credentials to the `src/supabaseClient.ts` file:
 
-`typescript
+```typescript
 import { createClient } from "@supabase/supabase-js"
 
 const supabaseUrl = "https://YOUR_SUPABASE_URL.supabase.co"
 const supabaseKey = "YOUR_SUPABASE_ANON_KEY"
 
 export const supabase = createClient(supabaseUrl, supabaseKey)
-`
+```
 
 You can now use `supabase` to interact with your backend:
 
-`typescript
+```typescript
 const { data, error } = await supabase.from("table_name").select("*")
-`
+```
 
 ### Making a Production Build
 
 To create a production build:
 
-`bash
+```bash
 pnpm build
 
 # or
 
 npm run build
-`
+```
 
 This will create a production bundle for your extension, ready to be zipped and published to the Chrome Web Store or other browser stores.
 
@@ -135,4 +132,4 @@ This template is open-source and available under the MIT License.
 
 ---
 
-thor: [Fabian Lessmann](mailto:fabianlessmann95@gmail.com)
+thor: [Fabian Lessmann](mailto:lessmannwebdev@gmail.com)
