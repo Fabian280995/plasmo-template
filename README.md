@@ -22,7 +22,7 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project template with int
 First, clone the repository:
 
 ```bash
-git clone https://github.com/your-username/plasmo-template.git
+git clone https://github.com/Fabian280995/plasmo-template.git
 ```
 
 Navigate to the project directory:
